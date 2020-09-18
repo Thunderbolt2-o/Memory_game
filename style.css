@@ -1,0 +1,78 @@
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 400px;
+  margin: 10% auto;
+}
+
+body{
+  background-color:#6a33de ;
+}
+
+img{
+border-radius: 20%;
+border: 3px solid;
+background-color: #684ead;
+margin: 2%;
+}
+
+img:hover{
+
+border: 5px dotted;
+transform: translateY(5px);
+
+}
+
+h3{
+
+text-align: center;
+font-size: 3rem;
+color: #fff;
+font-family: 'Press Start 2P', cursive;
+
+}
+
+
+.animationpro{
+  animation-name: textAmi;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.dance{
+  animation-name: wind;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes textAmi {
+
+0%{
+  font-size: 2rem;
+}
+
+100%{
+  font-size: 3rem;
+}
+
+}
+
+@keyframes wind{
+
+0%{
+  transform: rotateZ(0);
+}
+
+50%{
+
+  transform: rotateZ(20deg);
+
+}
+
+100%{
+
+  transform: rotateZ(-20deg);
+}
+
+}
